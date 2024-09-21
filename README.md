@@ -59,4 +59,4 @@ The styles are defined within a `<style>` tag in the `<head>` section. Key style
 - **Rules**: Left margin for the rules list.
 
 
-##THANK YOU!
+## THANK YOU!

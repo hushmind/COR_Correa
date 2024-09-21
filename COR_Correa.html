@@ -63,17 +63,41 @@
   }
   .left-align {
     text-align: left;
+    margin-right: 30%;
+  }
+  .container {
+      display: flex;
+      justify-content: flex-end; /* Aligns the container to the right */
+      padding-right: 0px; /
+  }
+  
+  .right-align {
+      text-align: left; /* Aligns text to the left within the container */
+      width: 25%; /* Adjust the width as needed */
+  }
+  .rules {
+    margin-left: 20px; /* Adds space to the left for indentation */
   }
   .highlight-row {
     background-color: #f0f8ff; /* Light blue background color */
   }
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .custom-table, .custom-table th, .custom-table td {
+      border: 1px solid black;
+  }
+  .custom-table th, .custom-table td {
+      padding: 10px;
+      text-align: justify;
 </style>
 </head>
 <body>
 
   <div class="logo-section">
       <div class="logo">
-          <img src="path/to/your/logo.png" alt="Logo">
+          <img src="logo.png" alt="Logo">
       </div>
       <div class="header">
           <p>Republic of the Philippines</p>
@@ -109,7 +133,7 @@
           </tr>
           <tr class="last-row">
               <td>
-              <span class="bold-text">Gender: Female </span></td>
+              <span class="bold-text">Gender:</span> Female</td>
               <td><span class="bold-text">Age:</span> 20 </td>
               <td><span class="bold-text">Year Level: 3rd year</span></td>
           </tr>
@@ -119,32 +143,98 @@
   <div class="section">
       <table>
       <tr class="highlight-row first-row">
-              <th>Course Code</th>
-              <th>Course Title</th>
-              <th>Credits</th>
-              <th>Instructor</th>
+              <th>CODE</th>
+              <th>SUBJECT TITLE</th>
+              <th style="word-spacing: 20px;"> U N I T<br>Lec Lab Credit</th>
+              <th>SECTION</th>
+              <th>SCHEDULE/ROOM</th>
+              <th>FACULTY SIGNATURE</th>
           </tr>
           <tr>
-              <td>CS101</td>
-              <td>Introduction to Computer Science</td>
-              <td>3</td>
-              <td>Dr. Smith</td>
+              <td>IT8/L</td>
+              <td>Advance Database Systems</td>
+              <td style="word-spacing: 30px;">2.0 1.0 3.0</td>
+              <td>BSIT3B2</td>
+              <td>Th 07:30 am - 09:30 am/CL 1<br>T 07:30 am - 10:30 am/MTC 1</td>
+              <td style="text-decoration: underline;">Lopez, Menchie L. </td>
+          <tr>
+              <td>IT9/L</td>
+              <td>Network Technologies 2</td>
+              <td style="word-spacing: 30px;">2.0 1.0 3.0</td>
+              <td>BSIT3B2</td>
+              <td>T 10:30 am - 01:30 pm/IT 101<br>Th 09:30 am - 11:30 am/CL 1</td>
+              <td style="text-decoration: underline;">Baguio, Kim C.</td>
           </tr>
-          <tr class="last-row">
-              <td>CS102</td>
-              <td>Data Structures</td>
-              <td>3</td>
-              <td>Prof. Johnson</td>
+          <tr>
+              <td>IT10/L</td>
+              <td>Information Assurance Security 1</td>
+              <td style="word-spacing: 30px;">2.0 1.0 3.0</td>
+              <td>BSIT3B2</td>
+              <td>Th 01:30 pm - 04:30 pm/MTC 1<br>T 03:30 pm - 05:30 pm/CL 3</td>
+              <td style="text-decoration: underline;">Pabilona, Tiffany O.</td>
+          </tr>
+          <tr>
+              <td>IT11/L</td>
+              <td>Web Systems and Technologies</td>
+              <td style="word-spacing: 30px;">2.0 1.0 3.0</td>
+              <td>BSIT3B2</td>
+              <td>W 11:30 am - 01:30 pm/CL 1<br>M 10:30 am - 01:30 pm/IT 101</td>
+              <td style="text-decoration: underline;">Dosado, Roy Cyril D.</td>
+          </tr>
+          <tr>
+              <td>IT12/L</td>
+              <td>Multimedia Systems</td>
+              <td style="word-spacing: 30px;">2.0 1.0 3.0</td>
+              <td>BSIT3B2</td>
+              <td>M 04:30 pm - 07:30 pm/NIT 3<br>W 03:30 pm - 05:30 pm/CL 3</td>
+              <td style="text-decoration: underline;">Baguio, Kim C.</td>
+          </tr>
+          <tr>
+              <td>GE-ET</td>
+              <td>Ethics</td>
+              <td style="word-spacing: 30px;">3.0 0.0 3.0</td>
+              <td>BSIT3B2</td>
+              <td>TTh 05:30 pm - 07:00 pm/IT -Room2</td>
+              <td style="text-decoration: underline;">Maghari, Dionimer</td>
+          </tr>
+          <tr>
+              <td>ITE 3/L</td>
+              <td>IT Elective 3</td>
+              <td style="word-spacing: 30px;">2.0 1.0 3.0</td>
+              <td>BSIT3B2</td>
+              <td>M 07:30 am - 10:30 am/IT 101<br>W 09:30 am - 11:30 am/CL 2</td>
+              <td style="text-decoration: underline;">Dizon, Demy R.</td>
           </tr>
       </table>
   </div>
-
-  <div class="section">
-      <h2>Official Registration Information:</h2>
-      <p>Registrar's Signature: ____________________</p>
-      <p>Date: ____________________</p>
-  </div>
-
+<br><br><br><br>
+<div class="container">
+    <div class="left-align">
+        <table class="custom-table">
+            <tr class="highlight-row first-row">
+                <th class="bold-text">PAYMENTS</th>
+            </tr>
+            <tr>
+                <td>Your fees are all paid under government, under of it are:
+                <br>1. Tuition Fee<br>2. Misc
+                <br>Other payments not stated is your responsibility
+                <br>You can proceed to your college for other informations about your billings!</td>
+            </tr>
+    </table>
+    </div>
+    <div class="right-align">
+        <p class="bold-text">RULES ON REFUND</p>
+        <p class="rules">
+            1. Full refund of tuition fee - Before the start of classes.
+            <br>2. 80% refund of tuition fee - within 1 week from the start of classes.
+            <br>3. 50% refund - within 2 weeks from the start of classes.
+            <br>4. No refund - after the 2nd week of classes.
+        </p>
+        <br><br><br>
+        <p>Registrar's Signature: ____________________</p>
+        <p>Date: ____________________</p>
+    </div>
+</div>
   <div class="footer">
       <p>Note: Please keep this certificate for future reference.</p>
   </div>

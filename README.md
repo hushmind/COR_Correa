@@ -1,7 +1,5 @@
 # COR_Correa
-Create your own COR aesthetic
-
-Sure! Here's a README file for your Certificate of Registration HTML code:
+Instruction: Create your own COR aesthetic
 
 ---
 
